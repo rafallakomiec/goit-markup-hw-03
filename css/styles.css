@@ -1,0 +1,273 @@
+:root {
+  /* Common */
+
+  --logo-firsthalf-color: #2196f3; /* color of first portion of site logo */
+  --logo-color: #000000; /* basic color of site logo */
+  --ft-logo-color: #ffffff; /* basic color of site logo in footer */
+  --nav-link-color: #212121; /* color of navigation links */
+  --nav-link-active-color: #2196f3; /* color of hovered over navigation link or to current subpage */
+  --header-contact-txt-color: #757575; /* color of header contact info */
+  --header-contact-txt-active-color: #2196f3; /* color of hovered over contact in header */
+  --bg-color: #ffffff; /* webpage background color */
+  --heading-color: #212121; /* h tags color */
+  --txt-color: #757575; /* p tags color */
+  --ft-bg-color: #2f303a; /* footer background color */
+  --ft-txt-color: #ffffff; /* footer text color*/
+  --ft-link-color: #ffffff96; /* footer link color */
+  --ft-link-active-color: #ffffffff; /* color of hovered over footer link */
+
+  /* Index */
+
+  --banner-bg-color: #2f303a; /* banner background color */
+  --banner-txt-color: #ffffff; /* banner text color */
+  --banner-button-bg-color: #2196f3; /* nonactive banner button background color */
+  --banner-button-bg-active-color: #f5f4fa; /* active banner button background color */
+  --banner-button-txt-color: #ffffff; /* nonactive banner button text color */
+  --banner-button-txt-active-color: #212121; /* active banner button text color */
+  --team-section-bg-color: #f5f4fa; /* team section background color */
+  --member-card-bg-color: #ffffff; /* team member card background color */
+
+  /* Portfolio */
+
+  --filter-button-bg-color: #f5f4fa; /* nonactive filter button background color */
+  --filter-button-bg-active-color: #2196f3; /* active filter button background color */
+  --filter-button-txt-color: #212121; /* nonactive filter button text color */
+  --filter-button-txt-active-color: #ffffff; /* active filter button text color */
+  --projects-section-bg-color: #ffffff; /* projects section background color */
+  --project-card-bg-color: #ffffff; /* project card background color */
+}
+
+/* RESET */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* COMMON */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--txt-color);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+}
+
+.section {
+  margin: 0;
+  padding: 94px 0;
+}
+
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-firsthalf {
+  color: var(--logo-firsthalf-color);
+}
+
+.nav-link {
+  color: var(--nav-link-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: var(--nav-link-active-color);
+}
+
+.header-contact {
+  color: var(--header-contact-txt-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.header-contact:hover,
+.header-contact:focus,
+.header-contact:active {
+  color: var(--header-contact-txt-active-color);
+}
+
+.footer {
+  background-color: var(--ft-bg-color);
+  color: var(--ft-txt-color);
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.footer address {
+  font-style: normal;
+}
+
+.footer a {
+  color: var(--ft-link-color);
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus,
+.footer a:active {
+  color: var(--ft-link-active-color);
+  text-decoration: underline;
+}
+
+.footer .logo {
+  color: var(--ft-logo-color);
+}
+.footer .logo:hover {
+  text-decoration: none;
+}
+
+/* INDEX */
+
+.banner {
+  background-color: var(--banner-bg-color);
+  text-align: center;
+}
+
+.banner h1 {
+  color: var(--banner-txt-color);
+  text-align: center;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.banner-button {
+  background-color: var(--banner-button-bg-color);
+  color: var(--banner-button-txt-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.banner-button:hover,
+.banner-button:focus {
+  background-color: var(--banner-button-bg-active-color);
+  color: var(--banner-button-txt-active-color);
+}
+
+.opinions h2,
+.our-services h2,
+.team h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.opinions h3 {
+  text-transform: uppercase;
+  color: var(--heading-color);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.opinions p {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--team-section-bg-color);
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.team h3 {
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.team li {
+  background-color: var(--member-card-bg-color);
+}
+
+/* PORTFOLIO */
+
+.projects-head-filters h1 {
+  color: var(--heading-color);
+  text-align: center;
+  font-size: 44px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.projects-head-filters h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--heading-color);
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.projects-head-filters button {
+  background-color: var(--filter-button-bg-color);
+  color: var(--filter-button-txt-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.projects-head-filters button:hover,
+.projects-head-filters button:focus {
+  background-color: var(--filter-button-bg-active-color);
+  color: var(--filter-button-txt-active-color);
+}
+
+.projects-list {
+  background-color: var(--projects-section-bg-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.projects-list li {
+  background-color: var(--project-card-bg-color);
+}
+
+.projects-list h3 {
+  color: var(--heading-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
