@@ -65,8 +65,8 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0;
-  width: 1200px;
+  padding: 0 15px;
+  max-width: 1200px;
 }
 
 .section {
@@ -74,9 +74,12 @@ body {
   padding: 94px 0;
 }
 
+header {
+  border-bottom: 1px solid var(--header-border-color);
+}
+
 header .container {
   padding: 24px 15px;
-  border-bottom: 1px solid var(--header-border-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -193,9 +196,13 @@ footer .container {
 /* INDEX */
 
 .banner {
-  padding: 200px 250px;
   background-color: var(--banner-bg-color);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
 }
 
 .banner h1 {
@@ -206,6 +213,7 @@ footer .container {
   font-weight: 900;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  max-width: 696px;
 }
 
 .banner-button {
@@ -291,7 +299,7 @@ footer .container {
   margin-top: 50px;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .team-card {
@@ -396,7 +404,6 @@ footer .container {
 }
 
 .project-card-desc {
-  width: 370px;
   padding: 20px 24px;
   border-top: none;
   border-right: 1px solid var(--project-card-desc-border-color);
